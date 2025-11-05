@@ -9,7 +9,7 @@ printName({ firstName: "Maria", lastName: "Silva" });
 
 // annotate variables
 
-let coordinate: { x: number; y: number } = { x: 34, y: 2 };
+let coordinates: { x: number; y: number } = { x: 34, y: 2 };
 
 // type of the return being oject type parameters
 
