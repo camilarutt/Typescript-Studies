@@ -93,3 +93,9 @@ type CatDog = Cat &
   Dog & {
     age: number;
   };
+
+const belinha: CatDog = {
+  numLives: 7,
+  breed: "Unknown",
+  age: 9,
+};
