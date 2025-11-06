@@ -51,4 +51,4 @@ enum ArrowKeysMoves {
 
 // if you use "const enum (...)", you avoid the new code and generated objects on javascript, but also can read and access from typescript, with comments
 
-// people tend to prefer using objects than enums
+// people tend to prefer using objects than enums, but enums can autocomplete
