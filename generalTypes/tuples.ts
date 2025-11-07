@@ -1,4 +1,9 @@
-// special type exclusive to typescript with fixed length and ordered with specific types
+/* #########################################################
+      This is the file for the lessons about TUPLES,
+          their syntax and types of common usage
+########################################################### */
+
+// special type exclusive to typescript with fixed length and ordered values with specific types
 
 const color: [number, number, number] = [255, 45, 3]; // ex for RGB
 // if "= []" it complains that needs three elements
