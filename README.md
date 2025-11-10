@@ -46,3 +46,8 @@ Please be considerate with the author and possible future readers.
 ## Feedback
 
 If you have any feedback or problems regarding this repository, please send an email to camilarut@gmail.com.
+
+## Special thanks to:
+[Readme.so Online Editor](https://readme.so/editor)
+
+[md-badges Repository (All the contributors)](https://github.com/inttter/md-badges)
