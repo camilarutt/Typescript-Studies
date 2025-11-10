@@ -10,6 +10,6 @@ const coco: Chicken = {
   name: "Coco",
 };
 
-// tsc --watch will compile from each change saved
+// tsc --watch will compile for each change saved
 // tsc --init
-// tsc
+// tsc will compile everything on the folder that is open on terminal
