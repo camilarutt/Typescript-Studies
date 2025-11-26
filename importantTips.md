@@ -13,3 +13,8 @@ HTML element type on DOM methods
 Different approach in typescript: non-null assertion operation.
 
 - You can use the exclamation mark after the DOM method call to say to typescript that it definitely exists.
+
+Type Assertions
+
+- When you use the alias "as", typescript will treat the data as the type asserted. It won't change the value per se.
+- Per example, HTMLElements don't have a value, but HTMLInputElement has, so we can use the type assertion to guarantee that it will retrieve the right elements
