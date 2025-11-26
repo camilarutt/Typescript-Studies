@@ -5,3 +5,11 @@ lib.dom.d.ts has all the references to use these types when needed to manipulate
 If you want to disable the default lib that inclues DOM types, check lib property.
 
 Files ending in .d.ts are type declaration types.
+
+HTML element type on DOM methods
+
+- It's normally an union type that can be null that is there to prevent if doesn't find anything, such as in getElementById. You can use the question mark about being optional the existence of the HTML Element and typescript will accept.
+
+Different approach in typescript: non-null assertion operation.
+
+- You can use the exclamation mark after the DOM method call to say to typescript that it definitely exists.
