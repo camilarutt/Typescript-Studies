@@ -40,12 +40,19 @@ interface Todo {
   completed: boolean;
 }
 
-const todos: Todo[] = [];
-
 const input = document.getElementById("todoinput")! as HTMLInputElement;
 const btn = document.getElementById("btn")! as HTMLButtonElement;
 const form = document.querySelector("form")!; // as query selector it already detected the HTMLFormElement
 const list = document.getElementById("todolist")!;
+
+const todos: Todo[] = readTodos(); // it envolves the possibility of the null value
+todos.forEach(createTodo);
+
+function readTodos(): Todo[] {
+  const todosJSON = localStorage.getItem("todos");
+  if (todosJSON === null) return [];
+  return JSON.parse(todosJSON);
+}
 
 function handleSubmit(e: SubmitEvent) {
   e.preventDefault();
@@ -56,12 +63,12 @@ function handleSubmit(e: SubmitEvent) {
   createTodo(newTodo);
   todos.push(newTodo);
 
+  localStorage.setItem("todos", JSON.stringify(todos));
   input.value = "";
   console.log("SUBMITTED");
 }
 
 function createTodo(todo: Todo) {
-  const newTodoText = input.value;
   const newLi = document.createElement("li");
   const checkbox = document.createElement("input");
   checkbox.type = "checkbox";
